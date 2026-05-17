@@ -57,10 +57,10 @@ Open to front-end or full-stack roles · EU / UK · remote-friendly
 
 ---
 
-## 🧬 Contribution Lab
+## 🧪 Lab Notes
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/conkouroudevs/conkouroudevs/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/conkouroudevs/conkouroudevs/output/github-snake.svg" />
-  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/conkouroudevs/conkouroudevs/output/github-snake-dark.svg" />
-</picture>
+<div align="center">
+
+![Chemistry Card](https://raw.githubusercontent.com/conkouroudevs/conkouroudevs/main/chemistry-card.svg)
+
+</div>
