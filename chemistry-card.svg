@@ -1,0 +1,107 @@
+<svg width="495" height="220" viewBox="0 0 495 220" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="495" height="220" rx="12" fill="#0d1117"/>
+
+  <!-- Animated border glow -->
+  <rect x="0.75" y="0.75" width="493.5" height="218.5" rx="11.5" fill="none" stroke="#00b4d8" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.35;1;0.35" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- ═══════════ LEFT: Periodic Table Card ═══════════ -->
+  <rect x="15" y="15" width="165" height="190" rx="6" fill="#161b22"/>
+  <rect x="15" y="15" width="165" height="190" rx="6" fill="none" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Atomic number -->
+  <text x="26" y="41" fill="#8b949e" font-family="Courier New, monospace" font-size="15" font-weight="bold">6</text>
+
+  <!-- Years of experience (top right) -->
+  <text x="170" y="41" fill="#8b949e" font-family="Courier New, monospace" font-size="11" text-anchor="end">3.0+</text>
+
+  <line x1="22" y1="48" x2="173" y2="48" stroke="#30363d" stroke-width="0.5"/>
+
+  <!-- Element Symbol -->
+  <text x="97" y="128" fill="#00b4d8" font-family="Courier New, monospace" font-size="70" font-weight="bold" text-anchor="middle">Ck</text>
+
+  <line x1="22" y1="138" x2="173" y2="138" stroke="#30363d" stroke-width="0.5"/>
+
+  <!-- Name -->
+  <text x="97" y="156" fill="#e6edf3" font-family="Courier New, monospace" font-size="11.5" text-anchor="middle">Constantinos</text>
+
+  <!-- Title -->
+  <text x="97" y="172" fill="#8b949e" font-family="Courier New, monospace" font-size="9" text-anchor="middle">Full-Stack Developer</text>
+
+  <line x1="22" y1="179" x2="173" y2="179" stroke="#30363d" stroke-width="0.5"/>
+
+  <!-- Stability -->
+  <text x="26" y="197" fill="#8b949e" font-family="Courier New, monospace" font-size="9">stable</text>
+
+  <!-- State symbol -->
+  <text x="168" y="197" fill="#00b4d8" font-family="Courier New, monospace" font-size="10" text-anchor="end">[s]</text>
+
+  <!-- ═══════════ RIGHT: Reaction + Flask ═══════════ -->
+
+  <!-- Section comment -->
+  <text x="205" y="37" fill="#4d5566" font-family="Courier New, monospace" font-size="9">// Career Synthesis Reaction</text>
+
+  <!-- Reactants -->
+  <text x="205" y="58" fill="#e6edf3" font-family="Courier New, monospace" font-size="12">ChE(g)  +  Code(aq)</text>
+
+  <!-- Catalyst label -->
+  <text x="236" y="71" fill="#6e7681" font-family="Courier New, monospace" font-size="8">catalyst: curiosity</text>
+
+  <!-- Reaction arrow -->
+  <text x="205" y="85" fill="#00b4d8" font-family="Courier New, monospace" font-size="12">──────────────────→</text>
+
+  <!-- Products -->
+  <text x="205" y="104" fill="#e6edf3" font-family="Courier New, monospace" font-size="12">SW_Dev(s) + GRC(aq)</text>
+
+  <!-- Thermodynamics -->
+  <text x="205" y="120" fill="#4d5566" font-family="Courier New, monospace" font-size="9">&#916;G&#176; &lt;&lt; 0  (highly spontaneous)</text>
+
+  <line x1="200" y1="130" x2="483" y2="130" stroke="#21262d" stroke-width="0.5"/>
+
+  <!-- Compounds / Stack -->
+  <text x="205" y="146" fill="#4d5566" font-family="Courier New, monospace" font-size="9">// Compounds</text>
+  <text x="205" y="161" fill="#e6edf3" font-family="Courier New, monospace" font-size="9">Next.js  React  TypeScript  JavaScript</text>
+  <text x="205" y="175" fill="#e6edf3" font-family="Courier New, monospace" font-size="9">Java  Python  MySQL  Docker</text>
+
+  <line x1="200" y1="184" x2="483" y2="184" stroke="#21262d" stroke-width="0.5"/>
+
+  <text x="205" y="200" fill="#4d5566" font-family="Courier New, monospace" font-size="9">Nicosia, Cyprus  |  EU / UK / Remote</text>
+
+  <!-- ═══════════ Mini Erlenmeyer Flask (top right) ═══════════ -->
+
+  <!-- Neck -->
+  <rect x="453" y="18" width="9" height="17" rx="1" fill="#03045e" stroke="#00b4d8" stroke-width="1.2"/>
+  <!-- Rim -->
+  <line x1="450" y1="18" x2="465" y2="18" stroke="#00b4d8" stroke-width="1.5"/>
+  <!-- Flask body (conical) -->
+  <path d="M 453 35 L 438 80 L 477 80 L 462 35 Z" fill="#03045e" stroke="#00b4d8" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- Liquid fill -->
+  <path d="M 441 63 Q 457 59 473 63 L 477 80 L 438 80 Z" fill="#0077b6" fill-opacity="0.75"/>
+  <!-- Liquid surface shimmer -->
+  <path d="M 441 63 Q 457 59 473 63" fill="none" stroke="#00b4d8" stroke-width="0.8" stroke-opacity="0.6"/>
+
+  <!-- Bubble 1 -->
+  <circle cx="447" cy="67" r="2.5" fill="#00e5ff" fill-opacity="0.75">
+    <animate attributeName="cy" values="67;42" dur="2.2s" repeatCount="indefinite" begin="0s" calcMode="ease-in"/>
+    <animate attributeName="fill-opacity" values="0.75;0" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="r" values="2.5;1.5" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+
+  <!-- Bubble 2 -->
+  <circle cx="457" cy="65" r="2" fill="#00b4d8" fill-opacity="0.6">
+    <animate attributeName="cy" values="65;40" dur="2.2s" repeatCount="indefinite" begin="0.75s" calcMode="ease-in"/>
+    <animate attributeName="fill-opacity" values="0.6;0" dur="2.2s" repeatCount="indefinite" begin="0.75s"/>
+    <animate attributeName="r" values="2;1" dur="2.2s" repeatCount="indefinite" begin="0.75s"/>
+  </circle>
+
+  <!-- Bubble 3 -->
+  <circle cx="466" cy="68" r="1.8" fill="#00e5ff" fill-opacity="0.5">
+    <animate attributeName="cy" values="68;44" dur="2.2s" repeatCount="indefinite" begin="1.5s" calcMode="ease-in"/>
+    <animate attributeName="fill-opacity" values="0.5;0" dur="2.2s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="r" values="1.8;0.8" dur="2.2s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+
+</svg>
