@@ -1,18 +1,18 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Constantinos%20Kourouklaris&fontSize=36&fontColor=ffffff&animation=fadeIn&fontAlignY=42&desc=Full-Stack%20Developer%20%7C%20Former%20Chemical%20Engineer&descAlignY=58&descAlign=50" />
+<div align="center">
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/constantinos-kourouklaris-0471a6187/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:conkourouklari@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
+# Constantinos Kourouklaris
 
-## Hey, I'm Constantinos!
+### Full-Stack Developer · Nicosia, Cyprus
+### *From chemical engineering to production software. The mindset carried over.*
 
-Here you will find projects I'm working on as I push deeper into modern web development.
+<br>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/constantinos-kourouklaris-0471a6187/)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:conkourouklari@gmail.com)
+
+</div>
+
+---
 
 ## 😊 About me
 
@@ -22,9 +22,13 @@ That problem-solving mindset followed me when I transitioned into software. For 
 
 These days I'm going deep on **Next.js** and React. I bring an engineer's approach to the frontend: understand the system, design it right, then build it.
 
-I'm based in **Nicosia, Cyprus** and open to front-end or full-stack roles in the EU, UK, or remote.
+Open to front-end or full-stack roles · EU / UK · remote-friendly
+
+---
 
 ## ⚗️ Tech Stack
+
+<div align="center">
 
 **Frontend**
 
@@ -49,6 +53,10 @@ I'm based in **Nicosia, Cyprus** and open to front-end or full-stack roles in th
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
+</div>
+
+---
+
 ## 🧬 Contribution Lab
 
 <picture>
@@ -56,5 +64,3 @@ I'm based in **Nicosia, Cyprus** and open to front-end or full-stack roles in th
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/conkouroudevs/conkouroudevs/output/github-snake.svg" />
   <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/conkouroudevs/conkouroudevs/output/github-snake-dark.svg" />
 </picture>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" />
