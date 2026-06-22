@@ -18,7 +18,7 @@
 
 My path into software started in a lab, not a classroom. I hold an MSc in Biological and Bioprocess Engineering from the University of Sheffield and a BEng in Chemical Engineering from Lancaster University — where I spent years building computational models: reaction kinetics, multiphysics simulations, process optimisation.
 
-That problem-solving mindset followed me when I transitioned into software. For 3+ years I've been building production systems at Enactia — Java backend services, Python REST APIs, and a JavaScript frontend powering an enterprise GRC SaaS platform for compliance teams across industries.
+That problem-solving mindset followed me when I transitioned into software. For 3+ years I've been building production systems — Java backend services, Python REST APIs, and a JavaScript frontend powering an enterprise GRC SaaS platform for compliance teams across industries.
 
 These days I'm going deep on **Next.js** and React. I bring an engineer's approach to the frontend: understand the system, design it right, then build it.
 
