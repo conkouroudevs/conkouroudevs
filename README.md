@@ -16,11 +16,11 @@
 
 ## 😊 About me
 
-Full-stack developer with 3+ years building and shipping production software for enterprise SaaS: Java backend services, Python REST APIs and JavaScript frontends.
+Full-stack developer with 3+ years building and shipping production software for enterprise SaaS: scalable Python backends (Django, FastAPI) on PostgreSQL, Java services and modern JavaScript frontends.
 
 I started in engineering (MSc Biological & Bioprocess Engineering, University of Sheffield; BEng Chemical Engineering, Lancaster University), where I built computational models and optimised complex systems. I bring the same approach to software: understand the problem, design it properly, then build it.
 
-Currently focused on **Next.js**, React and TypeScript.
+Today I build full-stack web apps with **Next.js**, React and TypeScript, and cross-platform mobile apps with **Flutter**.
 
 Open to front-end or full-stack roles · EU / UK · remote-friendly
 
@@ -36,6 +36,8 @@ Open to front-end or full-stack roles · EU / UK · remote-friendly
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
@@ -43,9 +45,9 @@ Open to front-end or full-stack roles · EU / UK · remote-friendly
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
 **Tools**
 
