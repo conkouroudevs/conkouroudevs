@@ -20,7 +20,7 @@ Full-stack developer with 3+ years building and shipping production software for
 
 I started in engineering (MSc Biological & Bioprocess Engineering, University of Sheffield; BEng Chemical Engineering, Lancaster University), where I built computational models and optimised complex systems. I bring the same approach to software: understand the problem, design it properly, then build it.
 
-Today I build full-stack web apps with **Next.js**, React and TypeScript, and cross-platform mobile apps with **Flutter**.
+Today I build full-stack apps with **Django**, **FastAPI** and **Next.js** (React, TypeScript), and cross-platform mobile apps with **Flutter**.
 
 Open to front-end or full-stack roles · EU / UK · remote-friendly
 
