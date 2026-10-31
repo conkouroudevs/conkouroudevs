@@ -16,7 +16,7 @@
 
 ## 😊 About me
 
-Full-stack developer with 3+ years building and shipping production software for enterprise SaaS: scalable Python backends (Django, FastAPI) on PostgreSQL, Java services and modern JavaScript frontends.
+Full-stack developer with 3+ years building and shipping production software for enterprise SaaS: scalable Python backends (Django, FastAPI, Flask) on PostgreSQL, MySQL and MongoDB, Java services and modern JavaScript frontends.
 
 I started in engineering (MSc Biological & Bioprocess Engineering, University of Sheffield; BEng Chemical Engineering, Lancaster University), where I built computational models and optimised complex systems. I bring the same approach to software: understand the problem, design it properly, then build it.
 
@@ -47,7 +47,10 @@ Open to front-end or full-stack roles · EU / UK · remote-friendly
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
 **Tools**
 
