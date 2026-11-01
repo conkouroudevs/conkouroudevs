@@ -7,6 +7,7 @@ import base64
 import datetime
 import json
 import pathlib
+import textwrap
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets"
@@ -93,9 +94,21 @@ def hero():
     card("hero", 794, 300, b, ["fr", "ca", "mo"], margin=True)
 
 
-def head_about():
+def about():
+    paras = [
+        "Full-stack developer with 3+ years shipping production software for enterprise SaaS and the iGaming industry: Python backends (Django, FastAPI, Flask), Java services and modern JavaScript frontends, on PostgreSQL, MySQL and MongoDB.",
+        "I started in engineering (MSc Biological & Bioprocess Engineering, University of Sheffield; BEng Chemical Engineering, Lancaster University), building computational models and optimising complex systems. I bring the same approach to software: understand the problem, design it properly, then build it.",
+        "I work across the full stack, from APIs and backend services to web and mobile frontends, with Django, FastAPI, Next.js and Flutter.",
+    ]
     b = T(68, 38, "ENTRY 02", "mo", 12, ACC, extra='letter-spacing="1.4"') + T(160, 42, "About me", "fr", 30, INK)
-    card("head-about", 794, 64, b, ["fr", "mo"], margin=True)
+    y = 92
+    for p in paras:
+        for line in textwrap.wrap(p, 88):
+            b += T(68, y, line, "i4", 16, INK)
+            y += 25
+        y += 12
+    b += T(68, y + 6, "OPEN TO FRONT-END OR FULL-STACK ROLES · EU / UK · REMOTE-FRIENDLY", "mo", 11.5, ACC, extra='letter-spacing="1"')
+    card("about", 794, y + 36, b, ["fr", "mo", "i4"], margin=True)
 
 
 def reaction():
@@ -168,7 +181,7 @@ def lab_notes():
 
 if __name__ == "__main__":
     hero()
-    head_about()
+    about()
     reaction()
     stack()
     lab_notes()
