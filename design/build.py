@@ -1,12 +1,9 @@
 """Builds the profile README images into assets/.
 
 The whole notebook is one SVG (assets/page.svg) so GitHub's page background never
-shows between sections. The Lab notes plate reads design/contributions.json, which
-the lab-notes workflow refreshes daily. Standard library only.
+shows between sections. Standard library only.
 """
 import base64
-import datetime
-import json
 import pathlib
 import textwrap
 
@@ -71,7 +68,11 @@ def hero():
           f'<rect x="607" y="211" width="146" height="50" fill="none" stroke="{ACC}" stroke-width="1"/>' +
           T(680, 232, "OPEN TO ROLES", "mo", 11.5, ACC, "middle", 'letter-spacing="1"') +
           T(680, 250, "EU / UK · REMOTE", "mo", 11.5, ACC, "middle", 'letter-spacing="1"') + "</g>")
-    return b, 300
+    b += (f'<rect x="{X + 4}" y="284" width="128" height="44" fill="{ACC}"/>'
+          f'<rect x="{X}" y="280" width="128" height="44" fill="{INK}"/>' + T(X + 64, 308, "LinkedIn", "i6", 15, PAPER, "middle") +
+          f'<rect x="{X + 150}" y="280" width="238" height="44" fill="{PAPER}" stroke="{INK}" stroke-width="2"/>' +
+          T(X + 269, 308, "conkourouklari@gmail.com", "i6", 15, INK, "middle"))
+    return b, 352
 
 
 def about():
@@ -122,72 +123,30 @@ def stack():
                   T(x + 39, ty + 81, name, "i6", 10, INK, "middle"))
             n += 1
         y += 136
-    return b, 466
-
-
-def lab_notes():
-    days = json.loads((ROOT / "design/contributions.json").read_text())["days"]
-    cols = -(-len(days) // 7)
-    level = lambda c: 0 if c == 0 else 1 if c <= 2 else 2 if c <= 5 else 3 if c <= 10 else 4
-    fill = ["none", "#c3cfe8", "#8da2d0", "#4a68a8", INK]
-    ring = ["#bdb6a0", "#9fb0d4", "#6f87bd", "#2c4a8f", INK]
-    x0, top, pitch, r = X + 16, 94, (W - 26 - X - 16) / cols, 4.8
-    best = max(range(len(days)), key=lambda i: days[i][1])
-    b = heading("04", "Lab notes", "(contributions, last 12 months)")
-    for d, ch in enumerate("ABCDEFG"):
-        b += T(X, top + d * pitch + pitch / 2 + 3, ch, "mo", 9, MUTED)
-    last = datetime.date.fromisoformat(days[0][0]).month
-    for w in range(1, cols):
-        dt = datetime.date.fromisoformat(days[w * 7][0])
-        if dt.month != last:
-            b += T(x0 + w * pitch, 84, dt.strftime("%b"), "mo", 11, MUTED)
-            last = dt.month
-    for i, (date, c) in enumerate(days):
-        cx, cy = x0 + (i // 7) * pitch + pitch / 2, top + (i % 7) * pitch + pitch / 2
-        b += f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r}" fill="{fill[level(c)]}" stroke="{ring[level(c)]}" stroke-width="1.2"><title>{c} contributions, {date}</title></circle>'
-        if i == best:
-            b += f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{r + 3}" fill="none" stroke="{ACC}" stroke-width="2"/>'
-    b += T(X, 232, "one well = one day. darker = more work.", "ca", 24, ACC)
-    b += T(590, 227, "less", "mo", 10, MUTED, "end") + T(700, 227, "more", "mo", 10, MUTED)
-    for i in range(5):
-        b += f'<circle cx="{606 + i * 20}" cy="224" r="6" fill="{fill[i]}" stroke="{ring[i]}" stroke-width="1.2"/>'
-    return b, 256
+    return b, 484
 
 
 def page():
     body, y = "", 0
-    for i, section in enumerate((hero, about, reaction, stack, lab_notes)):
+    for i, section in enumerate((hero, about, reaction, stack)):
         b, h = section()
         if i:
-            body += f'<path d="M1 {y}H{W - 1}" stroke="{INK}" stroke-width="2"/>'
+            body += f'<path d="M{X} {y}H{W - 26}" stroke="#bdb6a0" stroke-width="1.5" stroke-dasharray="2 5" stroke-linecap="round"/>'
         body += f'<g transform="translate(0 {y})">{b}</g>'
         y += h
-    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W + 6} {y + 6}" width="{W + 6}" height="{y + 6}">'
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {y}" width="{W}" height="{y}">'
            f'<style>{font_css(list(FACES))}</style>'
            '<defs><pattern id="g" width="28" height="28" patternUnits="userSpaceOnUse">'
            f'<path d="M28 0H0V28" fill="none" stroke="{INK}" stroke-opacity=".07"/></pattern></defs>'
-           f'<rect x="6" y="6" width="{W}" height="{y}" fill="{INK}"/>'
-           f'<rect x="1" y="1" width="{W - 2}" height="{y - 2}" fill="{PAPER}"/>'
+                      f'<rect x="1" y="1" width="{W - 2}" height="{y - 2}" fill="{PAPER}"/>'
            f'<rect x="1" y="1" width="{W - 2}" height="{y - 2}" fill="url(#g)"/>'
            f'<path d="M44 2V{y - 2}" stroke="#d9908a" stroke-width="2"/>'
            f'{body}'
-           f'<rect x="1" y="1" width="{W - 2}" height="{y - 2}" fill="none" stroke="{INK}" stroke-width="2"/>'
+           f'<rect x="1" y="1" width="{W - 2}" height="{y - 2}" fill="none" stroke="#bdb6a0" stroke-width="2"/>'
            '</svg>')
     OUT.mkdir(exist_ok=True)
     (OUT / "page.svg").write_text(svg, encoding="utf-8")
 
 
-def button(name, label, w, filled):
-    fill, fg = (INK, PAPER) if filled else (PAPER, INK)
-    shadow = f'<rect x="4" y="4" width="{w}" height="46" fill="{ACC}"/>' if filled else ""
-    (OUT / f"{name}.svg").write_text(
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w + 4} 50" width="{w + 4}" height="50">'
-        f'<style>{font_css(["i6"])}</style>{shadow}'
-        f'<rect x="1" y="1" width="{w - 2}" height="44" fill="{fill}" stroke="{INK}" stroke-width="2"/>'
-        f'{T(w / 2, 29, label, "i6", 15, fg, "middle")}</svg>', encoding="utf-8")
-
-
 if __name__ == "__main__":
     page()
-    button("btn-linkedin", "LinkedIn", 128, True)
-    button("btn-email", "Email me", 120, False)
