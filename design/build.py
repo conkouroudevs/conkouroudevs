@@ -70,8 +70,8 @@ def hero():
           T(680, 250, "EU / UK · REMOTE", "mo", 11.5, ACC, "middle", 'letter-spacing="1"') + "</g>")
     b += (f'<rect x="{X + 4}" y="284" width="128" height="44" fill="{ACC}"/>'
           f'<rect x="{X}" y="280" width="128" height="44" fill="{INK}"/>' + T(X + 64, 308, "LinkedIn", "i6", 15, PAPER, "middle") +
-          f'<rect x="{X + 150}" y="280" width="238" height="44" fill="{PAPER}" stroke="{INK}" stroke-width="2"/>' +
-          T(X + 269, 308, "conkourouklari@gmail.com", "i6", 15, INK, "middle"))
+          f'<rect x="{X + 150}" y="280" width="120" height="44" fill="{PAPER}" stroke="{INK}" stroke-width="2"/>' +
+          T(X + 210, 308, "Email me", "i6", 15, INK, "middle"))
     return b, 352
 
 
