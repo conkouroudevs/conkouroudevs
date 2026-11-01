@@ -4,7 +4,9 @@ The whole notebook is one SVG (assets/page.svg) so GitHub's page background neve
 shows between sections. Standard library only.
 """
 import base64
+import hashlib
 import pathlib
+import re
 import textwrap
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -145,7 +147,12 @@ def page():
            f'<rect x="1" y="1" width="{W - 2}" height="{y - 2}" fill="none" stroke="#bdb6a0" stroke-width="2"/>'
            '</svg>')
     OUT.mkdir(exist_ok=True)
-    (OUT / "page.svg").write_text(svg, encoding="utf-8")
+    for old in OUT.glob("page*.svg"):
+        old.unlink()
+    name = f"page-{hashlib.md5(svg.encode()).hexdigest()[:8]}.svg"  # new name per build: GitHub caches images by URL
+    (OUT / name).write_text(svg, encoding="utf-8")
+    readme = ROOT / "README.md"
+    readme.write_text(re.sub(r"assets/page[^\"]*\.svg", f"assets/{name}", readme.read_text(encoding="utf-8")), encoding="utf-8")
 
 
 if __name__ == "__main__":
